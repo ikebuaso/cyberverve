@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</head>
+<style>
+.swiper-button-next, .swiper-button-prev , .swiper-pagination-bullet{
+    color: white;
+}
+
+.hero-text {
+    color: white;
+    background-color: blue;
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-text p1{
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: "Google Sans Code", monospace;
+}
+.hero-text p2{
+    font-size: 60px;
+    font-weight: 500;
+    font-family: "Google Sans Code", monospace;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Google Sans Code", monospace;
+    margin-bottom: 40px;
+}
+.hero-button{
+    display: flex;
+    gap: 20px;
+}
+.hero-button .btn-primary{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: blue;
+}
+.hero-button .btn-secondary{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+</style>
+<body>
+    <section id="hero">
+        <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="hero-text">
+                     <img width="50" height="50" src="assets/icons/icons8-shield-50.png" alt="shield"/>
+                <p1>Securing your business.</p1>
+                <p2>Empowering your growth.</p2>
+                <p>Expert cybersecurity consulting and GRC advisory services for modern enterprise</p>
+                <div class="hero-button">
+                    <button class="btn-primary">Get Started</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+                </div>
+            </div>
+           
+            <div class="swiper-slide">
+                <div class="hero-text" style="background-color: black;">
+                     <img width="50" height="50" src="assets/icons/icons8-lock-50.png" alt="lock--v1"/>
+                <p1>Securing your business.</p1>
+                <p2>Empowering your growth.</p2>
+                <p>Expert cybersecurity consulting and GRC advisory services for modern enterprise</p>
+                <div class="hero-button">
+                    <button class="btn-primary">Get Started</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="hero-text">
+                     <img width="50" height="50" src="assets/icons/icons8-person-50.png" alt="person"/>
+                <p1>Securing your business.</p1>
+                <p2>Empowering your growth.</p2>
+                <p>Expert cybersecurity consulting and GRC advisory services for modern enterprise</p>
+                <div class="hero-button">
+                    <button class="btn-primary">Get Started</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </section>
+    <script>
+        let slider = new Swiper('.swiper', {
+            autoHeight: true,
+            direction: 'horizontal',
+            effect: 'slide',
+            loop: true,
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

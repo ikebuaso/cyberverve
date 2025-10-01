@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #0f0f0f;
+  --secondary-color: #ffffff;
+  --accent-color: blue;
+}
+body {
+  font-family: "Google Sans Code", monospace;
+}
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  height: 64px;
+  padding: 0 20px;
+}
+
+nav .nav-links {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+}
+
+nav .nav-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+nav .nav-links button#get-started {
+  font-family: "Google Sans Code", monospace;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: var(--accent-color);
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--secondary-color);
+  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+nav .nav-links button#get-started:hover {
+  background: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/*** hero section style  ***/
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullet {
+  --swiper-navigation-color: var(--secondary-color);
+  --swiper-pagination-color: var(--secondary-color);
+  --swiper-pagination-bullet-inactive-color: #c0b5b5;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+}
+
+.hero-text {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-text p1 {
+  margin-top: 10px;
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Google Sans Code", monospace;
+}
+.hero-text p2 {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Google Sans Code", monospace;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Google Sans Code", monospace;
+  margin-bottom: 40px;
+}
+.hero-button {
+  display: flex;
+  gap: 20px;
+}
+.hero-button .btn-primary {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--accent-color);
+}
+.hero-button .btn-secondary {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--secondary-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.hero-button .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/*** About section style  ***/
+#about {
+  height: 100vh;
+  width: 90vw;
+}
