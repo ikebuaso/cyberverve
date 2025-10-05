@@ -1,79 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyberverve</title>
-    <link rel="icon" type="image/png" href="assets/images/header-logo.jpg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" href="assets/images/header-logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Navigation -->
     <nav>
-        <div class="logo">
-            <img src="assets/images/header-logo.jpg" alt="Cyberverve Logo" style="width: 64px;"
-                onclick="window.location.href='#hero'">
-        </div>
-        <div class="nav-links">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Industries</a>
-            <a href="#">Resources</a>
-            <a href="#">Contact</a>
-            <button id="get-started">Get Started</button>
-        </div>
+      <div class="logo">
+        <img
+          src="assets/images/header-logo.jpg"
+          alt="Cyberverve Logo"
+          style="width: 64px"
+          onclick="window.location.href='#hero'"
+        />
+      </div>
+      <div class="nav-links">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Industries</a>
+        <a href="#">Resources</a>
+        <a href="#contact">Contact</a>
+        <button id="get-started">Get Started</button>
+      </div>
     </nav>
-    <section id="hero">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="hero-text">
-                        <img width="50" height="50" src="assets/icons/icons8-shield-50.png" alt="shield" />
-                        <p1>Securing your business.</p1>
-                        <p2>Empowering your growth.</p2>
-                        <p>Expert cybersecurity consulting and GRC advisory services for modern enterprise</p>
-                        <div class="hero-button">
-                            <button class="btn-primary">Get Started</button>
-                            <button class="btn-secondary">Learn More</button>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide">
-                    <div class="hero-text" style="background-color: black;">
-                        <img width="50" height="50" src="assets/icons/icons8-lock-50.png" alt="lock--v1" />
-                        <p1>Securing your business.</p1>
-                        <p2>Empowering your growth.</p2>
-                        <p>Expert cybersecurity consulting and GRC advisory services for modern enterprise</p>
-                        <div class="hero-button">
-                            <button class="btn-primary">Get Started</button>
-                            <button class="btn-secondary">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="hero-text">
-                        <img width="50" height="50" src="assets/icons/icons8-person-50.png" alt="person" />
-                        <p1>Securing your business.</p1>
-                        <p2>Empowering your growth.</p2>
-                        <p>Expert cybersecurity consulting and GRC advisory services for modern enterprise</p>
-                        <div class="hero-button">
-                            <button class="btn-primary">Get Started</button>
-                            <button class="btn-secondary">Learn More</button>
-                        </div>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="hero-text">
+              <img
+                width="60px"
+                height="60px"
+                src="assets/icons/icons8-shield-50.png"
+                alt="shield"
+              />
+              <p1 class="heading">Securing your business.</p1>
+              <p2 class="subheading">Empowering your growth.</p2>
+              <p>
+                Expert cybersecurity consulting and GRC advisory services for
+                modern enterprise
+              </p>
+              <div class="hero-button">
+                <button class="btn-primary">Get Started</button>
+                <button class="btn-secondary">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="hero-text" style="background-color: #161D2B;">
+              <img
+                width="60px"
+                height="60px"
+                src="assets/icons/icons8-lock-50.png"
+                alt="lock"
+              />
+              <p1 class="heading">Securing your business.</p1>
+              <p2 class="subheading">Empowering your growth.</p2>
+              <p>
+                Expert cybersecurity consulting and GRC advisory services for
+                modern enterprise
+              </p>
+              <div class="hero-button">
+                <button class="btn-primary">Get Started</button>
+                <button class="btn-secondary">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="hero-text">
+              <img
+                width="60px"
+                height="60px"
+                src="assets/icons/icons8-person-50.png"
+                alt="person"
+              />
+              <p1 class="heading">Securing your business.</p1>
+              <p2 class="subheading">Empowering your growth.</p2>
+              <p>
+                Expert cybersecurity consulting and GRC advisory services for
+                modern enterprise
+              </p>
+              <div class="hero-button">
+                <button class="btn-primary">Get Started</button>
+                <button class="btn-secondary">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-container">
+        <div class="about-header">
+          <h2>About CyberVerve</h2>
+          <p>
+            Leading cybersecurity and assurance consulting firm specializing in
+            Governance, Risk, and Compliance (GRC) services and Risk Management
+            &amp; Advisory solutions.
+          </p>
+        </div>
+
+        <div class="about-main">
+          <div class="about-text">
+            <h3>Empowering Organizations Through Expert Guidance</h3>
+            <p>
+              At CyberVerve, we understand that today's business landscape demands
+              robust cybersecurity frameworks and comprehensive risk management
+              strategies. Our team of seasoned professionals brings deep expertise
+              in IT compliance, governance frameworks, and strategic risk advisory.
+            </p>
+            <p>
+              We partner with organizations across banking, finance, healthcare,
+              and technology sectors to build resilient security postures while
+              ensuring regulatory compliance and operational efficiency.
+            </p>
+          </div>
+
+          <div class="about-stats-card">
+            <div class="stat">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Enterprise Clients</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features-container">
+          <div class="feature-item">
+            <img src="assets/icons/expertise-icon.png" alt="Proven Expertise" />
+            <h4>Proven Expertise</h4>
+            <p>
+              Years of experience in cybersecurity, GRC, and internal audit across
+              multiple industries
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <img src="assets/icons/solutions-icon.png" alt="Tailored Solutions" />
+            <h4>Tailored Solutions</h4>
+            <p>
+              Customized approaches that align with your specific business
+              objectives and regulatory requirements
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <img src="assets/icons/results-icon.png" alt="Measurable Results" />
+            <h4>Measurable Results</h4>
+            <p>
+              Track record of delivering tangible improvements in security posture
+              and compliance readiness
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="testimonial-header">
+        <h2>Client Testimonials</h2>
+        <p>
+          Hear from our clients about their experience working with CyberVerve
+        </p>
+      </div>
+
+      <div class="swiper testimonial-swiper">
+        <div class="swiper-wrapper">
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <img
+                src="assets/icons/icons8-quote-100.png"
+                alt="quote"
+                class="quote-icon"
+              />
+              <p class="testimonial-text">
+                "CyberVerve's gaming industry expertise helped us implement
+                robust security controls while maintaining seamless user
+                experience. Their team understands the unique challenges of our
+                sector."
+              </p>
+              <div class="rating">★★★★★</div>
+              <div class="testimonial-author">
+                <p class="author-name">Chief Security Officer, BETMGM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <img
+                src="assets/icons/icons8-quote-100.png"
+                alt="quote"
+                class="quote-icon"
+              />
+              <p class="testimonial-text">
+                "Their infrastructure security consulting was instrumental in
+                securing our global construction projects. CyberVerve delivered
+                comprehensive risk assessments and practical solutions."
+              </p>
+              <div class="rating">★★★★★</div>
+              <div class="testimonial-author">
+                <p class="author-name">Risk Director, Ferrovial</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <img
+                src="assets/icons/icons8-quote-100.png"
+                alt="quote"
+                class="quote-icon"
+              />
+              <p class="testimonial-text">
+                "Working with CyberVerve elevated our financial services
+                security framework. Their deep understanding of regulatory
+                requirements and technical excellence is remarkable."
+              </p>
+              <div class="rating">★★★★★</div>
+              <div class="testimonial-author">
+                <p class="author-name">Head of Cybersecurity, Deutsche Bank</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <img
+                src="assets/icons/icons8-quote-100.png"
+                alt="quote"
+                class="quote-icon"
+              />
+              <p class="testimonial-text">
+                "Another short client quote here."
+              </p>
+              <div class="rating">★★★★★</div>
+              <div class="testimonial-author">
+                <p class="author-name">CTO, ExampleCo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- scoped pagination & navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2>Get in Touch</h2>
+          <p>
+            Ready to strengthen your cybersecurity posture? Let's discuss how we
+            can help your organization.
+          </p>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-item">
+            <div class="icon">
+              <img src="assets/icons/icons8-phone-100.png" alt="Phone" />
+            </div>
+            <div class="info-content">
+              <h3>Phone</h3>
+              <p>+1.646.220.8796</p>
+              <span>Mon-Fri 9AM-6PM EST</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">
+              <img src="assets/icons/icons8-email-100.png" alt="Email" />
+            </div>
+            <div class="info-content">
+              <h3>Email</h3>
+              <p>hello@cyberverve.net</p>
+              <span>We'll respond within 24 hours</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">
+              <img src="assets/icons/icons8-location-100.png" alt="Location" />
+            </div>
+            <div class="info-content">
+              <h3>Location</h3>
+              <p>New York, NY</p>
+              <span>Serving clients nationwide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <h3>Send us a message</h3>
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formsubmit.co/ikebuasojesse@gmail.com"
+            method="POST"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
             </div>
 
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-    </section>
-    <section id="about"></section>
-    <script src="script.js"></script>
-</body>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@company.com"
+                required
+              />
+            </div>
 
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Your Company"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell us about your cybersecurity needs..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="send-message-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <img
+            src="assets/images/footer logo.jpg"
+            alt="CyberVerve Logo"
+            class="footer-logo"
+          />
+          <p>Empower Your Technology Goals</p>
+          <p>New York, NY</p>
+          <a href="mailto:hello@cyberverve.net">hello@cyberverve.net</a>
+          <p>646 220 8796</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li>Cybersecurity Consulting</li>
+            <li>GRC Advisory</li>
+            <li>Risk Management & Advisory</li>
+            <li>Compliance Solutions</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Industries</h3>
+          <ul>
+            <li>Banking & Finance</li>
+            <li>Fintech & Payments</li>
+            <li>Healthcare</li>
+            <li>Technology & SaaS</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li onclick="window.location.href='#hero'">Home</li>
+            <li onclick="window.location.href='#about'">About</li>
+            <li onclick="window.location.href='#careers'">Careers</li>
+            <li onclick="window.location.href='#resources'">Resources</li>
+            <li onclick="window.location.href='#contact'">Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 CyberVerve. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
